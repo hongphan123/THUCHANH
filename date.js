@@ -1,4 +1,4 @@
-const myDateTime = (str = "Ngày hiện tại: ") => {
+const myDateTime = (str = "Ngày hiện Tại: ") => {
     return str + Date()
 }
 export default myDateTime

@@ -1,13 +1,14 @@
-import http from 'http';
+import http from "http";
 import date from "./date";
 import getURL from "./getURL";
-http.createServer(function (req, res) {
-    res.writeHead(200, {
-        'Content-Type': 'text/html;charset=utf-8'
-    });
-    res.write(date() + "<br>");
-    res.write(getURL.getPath(req) + "<br>");
-    res.write(getURL.getParamsURL(req) + "<br>");
-    res.write('Hello KTPM0121, Chúc Các Bạn Thành Công Với Nodejs');
-    res.end();
-}).listen(8080);
+// var http = require('http');
+// var date = require ("./date");
+// var getURL = require("./getURL");
+http.createServer (function (req, res){
+    res.writeHead(200, {'Content-Type' : 'text/html;charset=utf-8'});
+    res.write(date()+ "<br>");
+    res.write(getURL.getPath(req)+"<br>");
+    res.write(getURL.getParamsURL(req)+"<br>");
+    res.write('Hello HTPM0121, chúc bạn thành công với Nodejs');
+    res.end ();
+} ).listen(8080);
